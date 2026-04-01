@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
+
+#image {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#loading {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
