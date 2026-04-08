@@ -10,7 +10,6 @@ body {
 h1 {
   margin-bottom: 20px;
 }
-
 .controls {
   margin-bottom: 20px;
 }
@@ -18,24 +17,41 @@ h1 {
 input, button {
   padding: 10px;
   margin: 5px;
+  border-radius: 5px;
+  border: none;
 }
-
-#image {
-  max-width: 90%;
-  height: auto;
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+#result {
   margin-top: 20px;
-  border-radius: 10px;
 }
-
+.card {
+  border: 1px solid gray;
+  padding: 15px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 10px;
+  background: #111;
+}
+.card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 #loading {
   display: none;
-}
-
-.hidden {
-  display: none;
+  font-size: 18px;
+  margin-top: 20px;
 }
 @media (max-width: 600px) {
   h1 {
     font-size: 20px;
+  }
+
+  .card {
+    width: 95%;
   }
 }
