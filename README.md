@@ -1,87 +1,99 @@
-NASA Mission Explorer
+# NASA Mission Explorer
 
-Project Overview
+## Project Overview
 
-NASA Mission Explorer is a web application that allows users to explore NASA's Astronomy Picture of the Day (APOD). Users can select any date and view space images along with detailed explanations provided by NASA.
+NASA Mission Explorer is a web application that allows users to explore NASA's Astronomy Picture of the Day (APOD). Users can select a date and view space images along with detailed explanations.
 
-The application also includes a feature where users can check what the universe looked like on their birthday or any specific date.
+The application fetches real-time data from NASA’s public API and displays it in a clean, interactive interface.
 
-Purpose
+---
+
+## Purpose
 
 The goal of this project is to:
 
-* Provide an engaging way to explore space data
 * Work with real-world APIs
-* Implement date-based filtering and user interaction
+* Implement dynamic data rendering
+* Add interactivity using JavaScript
+* Build a responsive and user-friendly interface
 
-API Used
+---
+
+## API Used
 
 NASA APOD API
 Endpoint: https://api.nasa.gov/planetary/apod
 
 Features used:
 
-* Fetch image by date
-* HD image support
-* Description
+* Fetch data using date range
+* Retrieve image, title, and description
+* Handle API responses dynamically
 
-Features (Planned)
+---
 
-Core Features:
+## Features Implemented
 
-* Date picker to select any date
-* Birthday date feature
-* Full-screen image view
-* HD image toggle
-* Image description and details
+### Core Features
 
-Future Enhancements:
+* Fetch and display NASA APOD data
+* Date-based data retrieval
+* Loading state handling
+* Responsive design
 
-* Search functionality
-* Filter by date range
-* Improved UI design and animations
+### Interactive Features
 
- UI/UX Design
+* Search functionality (using `filter()`)
+* Sorting by date (ascending and descending using `sort()`)
+* Dynamic rendering using `map()`
+* View More toggle for descriptions
 
-* Dark space-themed interface
-* Clean and minimal layout
-* Responsive design for all devices
+---
 
-Technologies Used
+## Technologies Used
 
 * HTML
 * CSS
-* JavaScript 
-* Fetch API
+* JavaScript
+*  Fetch API
 
+---
 
-Setup Instructions
+## Setup Instructions
 
 1. Clone the repository:
 
-   bash
-   git clone https://github.com/swayamkothari345/nasa-mission-explorer.git
-   
+   ```bash
+   git clone https://github.com/your-username/nasa-mission-explorer.git
+   ```
 
 2. Navigate into the project:
 
-   bash
+   ```bash
    cd nasa-mission-explorer
-   
+   ```
 
-3. Get your API key:
-   Visit https://api.nasa.gov/ and generate your API key
+3. Run the project:
 
-4. Add your API key in the code:
+   * Open `index.html` in your browser
+     OR
+   * Use Live Server in VS Code
 
-   
-   const API_KEY = “DEMO_KEY”;
-   
+---
 
-5. Run the project:
-   Open index.html in your browser
-   or use Live Server in VS Code
+## API Key Note
 
-Author
+This project uses NASA's public `DEMO_KEY` for API access.
+For production or heavy usage, generate your own API key from: https://api.nasa.gov/
 
-SWAYAM KOTHARI
+---
+
+## Future Improvements
+
+* Full-screen image view
+* Save favorite images
+* Improved animations and UI enhancements
+
+---
+
+Swayam Kothari
